@@ -50,21 +50,10 @@
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>-->
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="./main.html">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Chefs' Choices</a></li>
+                <li><a href="./main.html">Home</a></li>
+                <li class="active"><a href="#">Menu</a></li>
                 <li><a href="#">Order Online</a></li>
-
             <!--HEAD-->
-                <li class="dropdown">
-                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">About us
-                <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Video & story</a></li>
-                    <li><a href="#">Join us!(Partnership)</a></li>
-                </ul>
-                </li>
-
                 <li class><a href="#">About Us & Partner</a></li>
             <!-- origin/master-->
                 <li class="dropdown">
@@ -88,7 +77,7 @@
     <!--header start -->
     <div id="main_content">
        <form name="aspnetForm" id="aspnetForm" method="post" action="">
-        
+
     <div id="left_side_bar" class="menu_side_bar" style="padding-top:130px">
         <ul class="ul_side_bar" >
             <li >Menu Categories</li>
@@ -112,7 +101,7 @@
     </div>
     <div id="middle_layout">
         <div id="menuContentWrapper" style="padding-top:100px">
-        <h2>Peaceful Restaurant Menu</h2> 
+        <h2>Peaceful Restaurant Menu</h2>
 <fieldset id="cat1" class=" collapsible "><legend>Lunch Special</legend>
 <table class="table table-hover">
 <tr><td>SP1</td><td class='item_name'>Beef & Brocoli<br /><span class='item_desc'>(stir-fried with minced garlic & light soy sauce)</span></td>
@@ -681,14 +670,14 @@
                 }else{
                     if ( oldValue.substr(oldValue.length-1,1)!=",")
                         oldValue = oldValue +","
-                } 
-                
+                }
+
                 if (src.checked){
                     idx = oldValue.indexOf(","+value+",");
                     // no repeat value
                     if (idx==-1){
                         value = oldValue+value+",";
-                        setCookie(cookieName, value, exp); 
+                        setCookie(cookieName, value, exp);
                     }
                 }else{
                     idx = oldValue.indexOf(","+value+",");
@@ -698,7 +687,7 @@
                             value = oldValue.substr(0,idx+1)+oldValue.substr(idx+mySize);
                         else
                             value = oldValue.substr(0,idx+1);
-                        setCookie(cookieName, value, exp); 
+                        setCookie(cookieName, value, exp);
                     }
                 }
                 // alert("Old:"+oldValue+", new:"+value);
