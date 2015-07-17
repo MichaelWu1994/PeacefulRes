@@ -17,52 +17,765 @@
         <link rel="stylesheet" href='./styles/bootstrap.min.css'/>
         <link rel="stylesheet" href="./styles/font-awesome.min.css">
         <link rel="stylesheet" href="./styles/bootstrap.icon-large.min.css">
+        <link rel="stylesheet" href="./styles/original-1.css"/>
 
 
 </head>
 
 <body>
 
-<div class="container-fluid" style= " background-color:#C3272D">
-<div class="row">
-
-<div = class= "col-md-6">
-<h1 align= 'center' style="padding-top:5px;padding-bottom:15px":15px><font face="KaiTi" color='white'><strong>和 平 饭 店</strong></font></h1>
-</div>
-
-
-<div = class= "col-md-6">
-<h1 align= 'center' style="padding-top:8px":15px><font face="Times New Roman" color='white'><strong>PEACEFUL RESTAURANT</strong></font></h1>
-</div>
-</div>
-</div>
-
-
-<div class="container">
-<p style="text-align:center">
-<button type="button" class="btn btn-default btn-lg">HOME</button>
-<button type="button" class="btn btn-default btn-lg">ABOUT US</button>
-<button type="button" class="btn btn-default btn-lg">MENU</button>
-<button type="button" class="btn btn-default btn-lg">ONLINE ORDER</button>
-<button type="button" class="btn btn-default btn-lg">TODAY'S SPECIAL</button>
-</p>
-
-
-</div>
-
-
-
-<div class="container-fluid"  >
-
-    <div class= "row">
-        <div = class= "col-md-6 ">
-
+        <!-- navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./main.html"><h3 style="margin-top:-1px"><font face="KaiTi" color='white'><strong>和 平 饭 店</strong></font></h3></a>
+            <a class="navbar-brand" href="./main.html"><h3 style="margin-top:-1px"><font face="Times New Roman" color='white'><strong>PEACEFUL RESTAURANT</strong></font></h3></a>
         </div>
-        <div = class= "col-md-6">
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <!--<ul class="nav navbar-nav">
+
+            </ul>-->
+            <!--<form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>-->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="./main.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Chefs' Choices</a></li>
+                <li><a href="#">Order Online</a></li>
+
+            <!--HEAD-->
+                <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">About us
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Video & story</a></li>
+                    <li><a href="#">Join us!(Partnership)</a></li>
+                </ul>
+                </li>
+
+                <li class><a href="#">About Us & Partner</a></li>
+            <!-- origin/master-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./CAMBIE.html">West Broadway & Cambie</a></li>
+                        <li><a href="./QUEBEC.html">East 5th Ave & Quebec St</a></li>
+                        <li><a href="./BALSAM.html">West 4th Ave & Balsam St</a></li>
+                    </ul>
+                </li>
+                <li><a href="./main_cn.html">中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <!-- navigation END-->
+
+
+
+<body>
+<div id="bodyWrapper">
+    <!--header start -->
+    <div id="main_content">
+       <form name="aspnetForm" id="aspnetForm" method="post" action="">
+        
+    <div id="left_side_bar" class="menu_side_bar" style="padding-top:130px">
+        <ul class="ul_side_bar" >
+            <li >Menu Categories</li>
+            <li><a href="#cat1" class="listdata" >Lunch Special</a></li>
+<li><a href="#cat2" class="listdata" >Cold Dishes</a></li>
+<li><a href="#cat3" class="listdata" >Soups</a></li>
+<li><a href="#cat4" class="listdata" >Rice Dishes</a></li>
+<li><a href="#cat23" class="listdata" >Beef & Lamb</a></li>
+<li><a href="#cat22" class="listdata" >Pork</a></li>
+<li><a href="#cat21" class="listdata" >Chicken</a></li>
+<li><a href="#cat6" class="listdata" >Seafood </a></li>
+<li><a href="#cat8" class="listdata" >Vegetables & Tofu</a></li>
+<li><a href="#cat9" class="listdata" >Soup Noodles</a></li>
+<li><a href="#cat11" class="listdata" >Stir-Fried Noodles</a></li>
+<li><a href="#cat10" class="listdata" >Sauce Noodles</a></li>
+<li><a href="#cat13" class="listdata" >Dim Sum</a></li>
+<li><a href="#cat14" class="listdata" >Extras/Add-Ons</a></li>
+<li><a href="#cat15" class="listdata" >Beverages</a></li>
+
+        </ul>
+    </div>
+    <div id="middle_layout">
+        <div id="menuContentWrapper" style="padding-top:100px">
+        <h2>Peaceful Restaurant Menu</h2> 
+<fieldset id="cat1" class=" collapsible "><legend>Lunch Special</legend>
+<table class="table table-hover">
+<tr><td>SP1</td><td class='item_name'>Beef & Brocoli<br /><span class='item_desc'>(stir-fried with minced garlic & light soy sauce)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP1'>Order</label></td></tr>
+<tr><td>SP2</td><td class='item_name'>Green Onion Beef<br /><span class='item_desc'>(tender beef rapidly stir-fried with green onions & ginger)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP2'>Order</label></td></tr>
+<tr><td>SP3</td><td class='item_name'>Black Bean Sauce Beef</td>
+<td>7.50</td>
+<td class='item_order'><input id='item_SP3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP3'>Order</label></td></tr>
+<tr><td>SP4</td><td class='item_name'>Beef & Seasonal Vegetables</td>
+<td>7.50</td>
+<td class='item_order'><input id='item_SP4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP4'>Order</label></td></tr>
+<tr><td>SP5</td><td class='item_name'>Spicy Shredded Beef<br /><span class='item_desc'>(crispy shredded beef in a sweet & spicy sauce)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP5'>Order</label></td></tr>
+<tr><td>SP6</td><td class='item_name'>Chicken & Seasonal Vegetables</td>
+<td>7.50</td>
+<td class='item_order'><input id='item_SP6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP6'>Order</label></td></tr>
+<tr><td>SP7</td><td class='item_name'>Chicken & Broccoli</td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP7'>Order</label></td></tr>
+<tr><td>SP8</td><td class='item_name'>Black Bean Sauce Chicken</td>
+<td>7.50</td>
+<td class='item_order'><input id='item_SP8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP8'>Order</label></td></tr>
+<tr><td>SP9</td><td class='item_name'>Sweet Sour Chicken</td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP9'>Order</label></td></tr>
+<tr><td>SP10</td><td class='item_name'>Kung Pao Chicken<br /><span class='item_desc'>(w/ bell peppers, onions & peanuts)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP10'>Order</label></td></tr>
+<tr><td>SP11</td><td class='item_name'>Northern Curry Chicken<br /><span class='item_desc'>(w/ bell peppers, onions & yellow curry)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP11'>Order</label></td></tr>
+<tr><td>SP12</td><td class='item_name'>General Tzao's Chicken<br /><span class='item_desc'>(crispy chicken in a tangy & spicy sauce)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP12'>Order</label></td></tr>
+<tr><td>SP13</td><td class='item_name'>Beijing Plum Sauce Shredded Pork</td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP13'>Order</label></td></tr>
+<tr><td>SP14</td><td class='item_name'>Chilli-Garlic Sauce Shredded Pork<br /><span class='item_desc'>(w/bamboo & woodear mushroom)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP14'>Order</label></td></tr>
+<tr><td>SP15</td><td class='item_name'>Sichuan Pork Belly & Cabbage</td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP15'>Order</label></td></tr>
+<tr><td>SP16</td><td class='item_name'>Chilli-Garlic Sauce Eggplant</td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP16' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP16'>Order</label></td></tr>
+<tr><td>SP17</td><td class='item_name'>Szechuan String Beans</td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP17' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP17'>Order</label></td></tr>
+<tr><td>SP18</td><td class='item_name'>Shitake Mushroom & Bok Choy</td>
+<td>7.95</td>
+<td class='item_order'><input id='item_SP18' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP18'>Order</label></td></tr>
+<tr><td>SP19</td><td class='item_name'>Fried Tofu & Seasonal Vegetables</td>
+<td>7.50</td>
+<td class='item_order'><input id='item_SP19' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP19'>Order</label></td></tr>
+<tr><td>SP20</td><td class='item_name'>Szechuan Mah-Po Tofu</td>
+<td>7.50</td>
+<td class='item_order'><input id='item_SP20' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP20'>Order</label></td></tr>
+<tr><td>SP21</td><td class='item_name'>Prawns & Soft Tofu</td>
+<td>8.95</td>
+<td class='item_order'><input id='item_SP21' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP21'>Order</label></td></tr>
+<tr><td>SP22</td><td class='item_name'>Stir-Fried Prawns with Seasonal Vegetables</td>
+<td>8.95</td>
+<td class='item_order'><input id='item_SP22' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP22'>Order</label></td></tr>
+<tr><td>SP23</td><td class='item_name'>Add Noodles </td>
+<td>1.00</td>
+<td class='item_order'><input id='item_SP23' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_SP23'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat2" class=" collapsible "><legend>Cold Dishes</legend>
+<table>
+<tr><td>A3</td><td class='item_name'>Sichuan Meat Salad<br /><span class='item_desc'>(beef tendon, five-spiced beef & beef tripe tossed in spicy peppercorn sauce)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_A3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A3'>Order</label></td></tr>
+<tr><td>A4</td><td class='item_name'>Chicken & Clear Noodle Salad<br /><span class='item_desc'>(clear noodles drizzled with a spicy sesame sauce & shredded chicken)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_A4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A4'>Order</label></td></tr>
+<tr><td>A5</td><td class='item_name'>Garlic Sauce Pork Belly<br /><span class='item_desc'>(thinly sliced pork belly drizzled with a spicy garlic sauce)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_A5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A5'>Order</label></td></tr>
+<tr><td>A7</td><td class='item_name'>Mustard Seed Veg. Salad<br /><span class='item_desc'>(blanched carrots, celery & vermicelli tossed in a spicy mustard oil dressing)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A7'>Order</label></td></tr>
+<tr><td>A8</td><td class='item_name'>Sichuan Cucumbers<br /><span class='item_desc'>(fresh cucumbers tossed in a spicy Sichuan peppercorn dressing & garlic)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A8'>Order</label></td></tr>
+<tr><td>A9</td><td class='item_name'>Tofu & Celery Salad<br /><span class='item_desc'>(pressed tofu, sweet red pepper & celery tossed in light soy dressing)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A9'>Order</label></td></tr>
+<tr><td>A10</td><td class='item_name'>Clear Noodle Salad<br /><span class='item_desc'>(tossed with minced garlic, spinach & light soy dressing)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A10'>Order</label></td></tr>
+<tr><td>A11</td><td class='item_name'>Spicy Cilantro Salad <span id='opt_99' class='item_option'  onmouseover='showOptionDetails(this);' onmouseout='hideOptionDetails(this);'><img src='images/red_heart.png' alt='Recommended' /></span><br /><span class='item_desc'>(fresh cilantro, sliced jalapenos and pressed tofu tossed in a tangy dressing)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A11'>Order</label></td></tr>
+<tr><td>A13</td><td class='item_name'>Woodear Mushroom Salad<br /><span class='item_desc'>(tossed in a light tangy dressing with cilantro and green onion)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A13'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat3" class=" collapsible "><legend>Soups</legend>
+<table>
+<tr><td>A14</td><td class='item_name'>Peppery Fish Soup <br /><span class='item_desc'>(a spicy and sour soup filled with tofu, bamboo, pickled greens & sliced fish)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_A14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A14'>Order</label></td></tr>
+<tr><td>A15</td><td class='item_name'>Savoury Lamb Soup<br /><span class='item_desc'>(soft tofu, vermicelli, napa cabbage & woodear mushroom  in a light broth)</span></td>
+<td>10.95</td>
+<td class='item_order'><input id='item_A15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A15'>Order</label></td></tr>
+<tr><td>A17</td><td class='item_name'>Mandarin Wonton Soup<br /><span class='item_desc'>(pork & leafy green  filling, served in a light broth with spinach & cilantro)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_A17' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A17'>Order</label></td></tr>
+<tr><td>A18</td><td class='item_name'>Sichuan Hot & Sour Soup<span id='opt_8' class='item_option'  onmouseover='showOptionDetails(this);' onmouseout='hideOptionDetails(this);'>(V)</span><br /><span class='item_desc'>(pork,  shrimp, bamboo, mushroom & egg in a spicy sour soup)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A18' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A18'>Order</label></td></tr>
+<tr><td>A19</td><td class='item_name'>Sweet Corn & Chicken<br /><span class='item_desc'>(pureed corn, diced chicken & threaded egg)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A19' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A19'>Order</label></td></tr>
+<tr><td>A20</td><td class='item_name'>Seafood Tofu Soup<br /><span class='item_desc'>(fish, prawn, squid, soft tofu and egg white in a clear broth)</span></td>
+<td>9.95</td>
+<td class='item_order'><input id='item_A20' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A20'>Order</label></td></tr>
+<tr><td>A21</td><td class='item_name'>Shredded Veg Tofu Soup<br /><span class='item_desc'>(shredded bamboo, mushroom & pressed tofu in a clear broth)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A21' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A21'>Order</label></td></tr>
+<tr><td>A22</td><td class='item_name'>Tomato Egg Soup<br /><span class='item_desc'>(fresh tomato &  threaded egg simmered in a light broth)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_A22' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_A22'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat4" class=" collapsible "><legend>Rice Dishes</legend>
+<table>
+<tr><td>R1</td><td class='item_name'>Peaceful House Rice<br /><span class='item_desc'>(stir fried with diced pork, shrimp, vegetables & cilantro - slightly spicy)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_R1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_R1'>Order</label></td></tr>
+<tr><td>R2</td><td class='item_name'>Mandarin Lamb Rice<br /><span class='item_desc'>(stir fried with diced lamb, carrots, celery, egg & cilantro)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_R2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_R2'>Order</label></td></tr>
+<tr><td>R3</td><td class='item_name'>Yang-Zhou Rice<br /><span class='item_desc'>(stir fried with diced BBQ pork, shrimp, egg and vegetables)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_R3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_R3'>Order</label></td></tr>
+<tr><td>R4</td><td class='item_name'>Northern Curry Rice<br /><span class='item_desc'>(diced pork, shrimp, egg & vegetables stir-fried with curry)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_R4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_R4'>Order</label></td></tr>
+<tr><td>R7</td><td class='item_name'>Egg & Tomato Rice<br /><span class='item_desc'>(sautéed tomatoes and scrambled egg  on rice)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_R7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_R7'>Order</label></td></tr>
+<tr><td>R8</td><td class='item_name'>Beef & Tomato Rice<br /><span class='item_desc'>(sliced tender beef with sautéed tomatoes  on rice)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_R8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_R8'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat23" class=" collapsible "><legend>Beef & Lamb</legend>
+<table>
+<tr><td>B1</td><td class='item_name'>Sichuan Broth Braised Beef<span id='opt_99' class='item_option'  onmouseover='showOptionDetails(this);' onmouseout='hideOptionDetails(this);'><img src='images/red_heart.png' alt='Recommended' /></span><br /><span class='item_desc'>(served on greens surrounded by chilli oil & spicy mouth tingling broth)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_B1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_B1'>Order</label></td></tr>
+<tr><td>B2</td><td class='item_name'>Green Onion Beef<br /><span class='item_desc'>(tender beef rapidly stir-fried with green onions & ginger)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_B2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_B2'>Order</label></td></tr>
+<tr><td>B3</td><td class='item_name'>Xin-Jiang Cumin Beef<span id='opt_99_13' class='item_option'  onmouseover='showOptionDetails(this);' onmouseout='hideOptionDetails(this);'>*,<img src='images/red_heart.png' alt='Recommended' /></span><br /><span class='item_desc'>(stir fried with green peppers, cumin & chilli flakes)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_B3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_B3'>Order</label></td></tr>
+<tr><td>B4</td><td class='item_name'>Spicy Gingered Beef <br /><span class='item_desc'>(crispy shredded beef tossed in a spicy gingery sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_B4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_B4'>Order</label></td></tr>
+<tr><td>B5</td><td class='item_name'>Beef & Broccoli<br /><span class='item_desc'>(stir-fried with minced garlic & light soy sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_B5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_B5'>Order</label></td></tr>
+<tr><td>B6</td><td class='item_name'>Beef & Seasonal Vegetables<br /><span class='item_desc'>(stir-fried with minced garlic & light soy sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_B6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_B6'>Order</label></td></tr>
+<tr><td>L1</td><td class='item_name'>Cilantro Lamb<br /><span class='item_desc'>(spring lamb stirfried with cilantro, sweet bean sauce & chilli sauce)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_L1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_L1'>Order</label></td></tr>
+<tr><td>L2</td><td class='item_name'>Xing-Jiang Cumin Lamb<br /><span class='item_desc'>(spring lamb dry stir-fried with green peppers, crushed cumin & chilli flakes)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_L2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_L2'>Order</label></td></tr>
+<tr><td>L3</td><td class='item_name'>Green Onion Lamb<br /><span class='item_desc'>(spring lamb rapidly stir-friedwith green onions & ginger)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_L3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_L3'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat22" class=" collapsible "><legend>Pork</legend>
+<table>
+<tr><td>P2</td><td class='item_name'>Spicy Pork & Garlic Stems <br /><span class='item_desc'>(sliced pork stir-fried with fresh crispy garlic stems)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_P2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_P2'>Order</label></td></tr>
+<tr><td>P3</td><td class='item_name'>Sichuan Marbled Pork & Cabbage <br /><span class='item_desc'>(pork belly, five-spiced tofu, leeks, garlic & chilli  peppers)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_P3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_P3'>Order</label></td></tr>
+<tr><td>P4</td><td class='item_name'>Mandarin Mu-Shu Shredded Pork <br /><span class='item_desc'>(stir-fried with shredded woodear mushroom, egg & cabbage )</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_P4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_P4'>Order</label></td></tr>
+<tr><td>P5</td><td class='item_name'>Beijing Sweet Bean Sauce Pork <br /><span class='item_desc'>(served on a bed of shredded green onions)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_P5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_P5'>Order</label></td></tr>
+<tr><td>P6</td><td class='item_name'>Chilli-Garlic Sauce Shredded Pork<br /><span class='item_desc'>(stir-fried with shredded woodear fungus and bamboo)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_P6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_P6'>Order</label></td></tr>
+<tr><td>P7</td><td class='item_name'>Sweet Soy Glazed Spareribs <br /><span class='item_desc'>(spareribs tossed in a reduced sweet soy & ginger sauce)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_P7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_P7'>Order</label></td></tr>
+<tr><td>P8</td><td class='item_name'>Honey Garlic Spareribs<br /><span class='item_desc'>(crispy spareribs tossed in a minced garlic & honey sauce))</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_P8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_P8'>Order</label></td></tr>
+<tr><td>P9</td><td class='item_name'>Spicy Salted Spareribs<br /><span class='item_desc'>(crispy spareribs dusted in spiced salt & diced chilli pepper)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_P9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_P9'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat21" class=" collapsible "><legend>Chicken</legend>
+<table>
+<tr><td>C1</td><td class='item_name'>Sichuan Thousand Chilli Chicken<br /><span class='item_desc'>(crispy chicken stir fried with dried  peppers, tongue-tingling peppercorns, garlic, ginger & green onion)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_C1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C1'>Order</label></td></tr>
+<tr><td>C2</td><td class='item_name'>Green Peppered Chicken<br /><span class='item_desc'>(crispy chicken stir fried with fresh jalape?os, peppercorn oil & garlic)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_C2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C2'>Order</label></td></tr>
+<tr><td>C4</td><td class='item_name'>Sweet Soy Glazed Chicken<br /><span class='item_desc'>(crispy chicken tossed in a reduced sweet soy sauce with ginger & garlic)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_C4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C4'>Order</label></td></tr>
+<tr><td>C5</td><td class='item_name'>Kung Pao Chicken<br /><span class='item_desc'>(sweet bell peppers, onions, peanuts & chili peppers)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_C5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C5'>Order</label></td></tr>
+<tr><td>C6</td><td class='item_name'>Curry Chicken<br /><span class='item_desc'>(yellow curry,  sweet bell peppers & onions)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_C6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C6'>Order</label></td></tr>
+<tr><td>C7</td><td class='item_name'>Chicken & Broccoli<br /><span class='item_desc'>(lightly stir-fried with minced garlic)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_C7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C7'>Order</label></td></tr>
+<tr><td>C8</td><td class='item_name'>Chicken & Seasonal Vegetables <br /><span class='item_desc'>(lightly stir-fried with minced garlic)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_C8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C8'>Order</label></td></tr>
+<tr><td>C9</td><td class='item_name'>General Tsao's Chicken <br /><span class='item_desc'>(crispy battered chicken tossed in a spicy tangy sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_C9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C9'>Order</label></td></tr>
+<tr><td>C10</td><td class='item_name'>Sweet & Sour Chicken<br /><span class='item_desc'>(crispy battered chicken tossed in a tangy tomato-based sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_C10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C10'>Order</label></td></tr>
+<tr><td>C11</td><td class='item_name'>Mandarin Orange Ginger Chicken<br /><span class='item_desc'>(crispy battered chicken tossed in sweet & spicy orange-ginger sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_C11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_C11'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat6" class=" collapsible "><legend>Seafood </legend>
+<table>
+<tr><td>S1</td><td class='item_name'>Sichuan Broth Braised Fish<span id='opt_99' class='item_option'  onmouseover='showOptionDetails(this);' onmouseout='hideOptionDetails(this);'><img src='images/red_heart.png' alt='Recommended' /></span><br /><span class='item_desc'>(served on a bed of greens surrounded by spicy mouth tingling broth)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_S1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S1'>Order</label></td></tr>
+<tr><td>S2</td><td class='item_name'>Sweet Rice Wine Fish<br /><span class='item_desc'>(sliced basa stirfried with sweet soy, malt vinegar & bamboo)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_S2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S2'>Order</label></td></tr>
+<tr><td>S3</td><td class='item_name'>Spicy Chilli-Garlic Fish<br /><span class='item_desc'>(crispy basa fish tossed in a chili garlic sauce)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_S3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S3'>Order</label></td></tr>
+<tr><td>S4</td><td class='item_name'>Seafood & Snow Peas Stir-Fry<br /><span class='item_desc'>(a mixture of prawns, squid & basa fish lightly stirfried)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_S4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S4'>Order</label></td></tr>
+<tr><td>S5</td><td class='item_name'>Spicy Salted Squid<br /><span class='item_desc'>(crisp squid tossed in spiced salt & diced chilli pepper)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_S5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S5'>Order</label></td></tr>
+<tr><td>S6</td><td class='item_name'>Sichuan Peppercorn Squid<span id='opt_99' class='item_option'  onmouseover='showOptionDetails(this);' onmouseout='hideOptionDetails(this);'><img src='images/red_heart.png' alt='Recommended' /></span><br /><span class='item_desc'>(sweet green peppers, onions, peanuts & dried chilli peppers)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_S6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S6'>Order</label></td></tr>
+<tr><td>S7</td><td class='item_name'>Spicy Chili-Garlic Prawns <span id='opt_99' class='item_option'  onmouseover='showOptionDetails(this);' onmouseout='hideOptionDetails(this);'><img src='images/red_heart.png' alt='Recommended' /></span><br /><span class='item_desc'>(stir-fried with diced peppers & chilli-garlic sauce)</span></td>
+<td>14.95</td>
+<td class='item_order'><input id='item_S7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S7'>Order</label></td></tr>
+<tr><td>S8</td><td class='item_name'>Prawns & Vegetables <br /><span class='item_desc'>(lightly stir-fried with mixed vegetables & ginger)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_S8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S8'>Order</label></td></tr>
+<tr><td>S9</td><td class='item_name'>Kung Pao Prawns<br /><span class='item_desc'>(stir-fried with sweet peppers, onions, peanuts & chilli peppers)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_S9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S9'>Order</label></td></tr>
+<tr><td>S10</td><td class='item_name'>Prawns & Braised Tofu  <br /><span class='item_desc'>(soft tofu & prawns served in a light and clear sauce)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_S10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_S10'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat8" class=" collapsible "><legend>Vegetables & Tofu</legend>
+<table>
+<tr><td>V1</td><td class='item_name'>Sichuan Mah-Po Tofu<br /><span class='item_desc'>(soft tofu cooked with minced pork & peppercorn sauce)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V1'>Order</label></td></tr>
+<tr><td>V2</td><td class='item_name'>Seasonal Vegetables and Crispy Tofu <br /><span class='item_desc'>(variety of vegetables lightly stir-fried together)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V2'>Order</label></td></tr>
+<tr><td>V3</td><td class='item_name'>Spicy Salted Tofu<br /><span class='item_desc'>(crispy tofu tossed in spiced salt & diced chilli pepper)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V3'>Order</label></td></tr>
+<tr><td>V4</td><td class='item_name'>Tangy Shredded Potato <br /><span class='item_desc'>(stir fried with malt vinegar & garlic)</span></td>
+<td>10.95</td>
+<td class='item_order'><input id='item_V4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V4'>Order</label></td></tr>
+<tr><td>V5</td><td class='item_name'>Shitake Mushroom & Bok Choy <br /><span class='item_desc'>(light vegetable dish with minced garlic)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V5'>Order</label></td></tr>
+<tr><td>V6</td><td class='item_name'>Chinese Forest Vegetables<br /><span class='item_desc'>(bamboo shoots,shitake mushroom, leafy greens & crispy tofu)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V6'>Order</label></td></tr>
+<tr><td>V7</td><td class='item_name'>Sichuan White Cabbage<br /><span class='item_desc'>(Stir fried with garlic, malt vinegar & peppercorn oil)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V7'>Order</label></td></tr>
+<tr><td>V8</td><td class='item_name'>Seasonal Leafy<br /><span class='item_desc'>(lightly sautéed with or without garlic,  please inquire for daily variety)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V8'>Order</label></td></tr>
+<tr><td>V9</td><td class='item_name'>Savoury Braised<br /><span class='item_desc'>(bokchoy, enoki & straw mushroom gently braised in a light sauce)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V9'>Order</label></td></tr>
+<tr><td>V10</td><td class='item_name'>Sichuan A-Choy<br /><span class='item_desc'>(crispy leafy greens stir-fried with garlic, malt vinegar & Sichuan peppercorns)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V10'>Order</label></td></tr>
+<tr><td>V11</td><td class='item_name'>Chilli-Garlic Eggplant<br /><span class='item_desc'>(sautéed with shredded pork, bamboo, woodear mushroom & chilli  paste)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_V11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V11'>Order</label></td></tr>
+<tr><td>V12</td><td class='item_name'>Bean Sauce Eggplant<br /><span class='item_desc'>(sautéed eggplant with green onion, garlic & slightly sweet bean paste)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_V12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V12'>Order</label></td></tr>
+<tr><td>V13</td><td class='item_name'>Chinese Ratatouille<br /><span class='item_desc'>(eggplant, green peppers & potatoes stir fried with a savoury garlic sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_V13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V13'>Order</label></td></tr>
+<tr><td>V15</td><td class='item_name'>Sichuan String Beans <br /><span class='item_desc'>(stir-fried with a bit of pork, garlic, crushed chillies & soy sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_V15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V15'>Order</label></td></tr>
+<tr><td>V16</td><td class='item_name'>Garlic String Beans<br /><span class='item_desc'>(lightly stir-fried with minced garlic)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_V16' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_V16'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat9" class=" collapsible "><legend>Soup Noodles</legend>
+<table>
+<tr><td>N1</td><td class='item_name'>Shan-Xi Spicy & Tangy Soup Noodles<span id='opt_99_8_10' class='item_option'  onmouseover='showOptionDetails(this);' onmouseout='hideOptionDetails(this);'>(V),<img src='images/red_heart.png' alt='Recommended' /></span><br /><span class='item_desc'>(diced pork, garlic stems, mushroom, carrots & potatoes)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N1'>Order</label></td></tr>
+<tr><td>N2</td><td class='item_name'>Pork-Chop Noodles<br /><span class='item_desc'>(crispy pork-chop & spinach in a savoury broth)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N2'>Order</label></td></tr>
+<tr><td>N3</td><td class='item_name'>Snow Greens Soup Noodles <br /><span class='item_desc'>(cured Chinese greens & shredded pork in a light broth)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N3'>Order</label></td></tr>
+<tr><td>N4</td><td class='item_name'>Sichuan Beef Soup Noodles<br /><span class='item_desc'>(stewed beef in a dark spicy broth, spinach & cilantro)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N4'>Order</label></td></tr>
+<tr><td>N5</td><td class='item_name'>Lan-Zhou Beef Soup Noodles<br /><span class='item_desc'>(sliced five-spiced beef, spinach & cilantro in a light broth)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N5'>Order</label></td></tr>
+<tr><td>N6</td><td class='item_name'>Chicken Soup Noodles<br /><span class='item_desc'>(chicken, woodear mushroom & bokchoy in a light broth)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N6'>Order</label></td></tr>
+<tr><td>N7</td><td class='item_name'>Seafood Soup Noodles<br /><span class='item_desc'>(prawns, fish cake, squid, shitake mushroom & greens in a light broth)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_N7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N7'>Order</label></td></tr>
+<tr><td>N8</td><td class='item_name'>Stewed Lamb Soup Noodles<br /><span class='item_desc'>(tender lamb, napa cabbage & woodear mushroom in a light broth)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_N8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N8'>Order</label></td></tr>
+<tr><td>N9</td><td class='item_name'>Vegetable & Tofu Soup Noodles<br /><span class='item_desc'>(assorted vegetables & crispy tofu in a light chicken broth)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N9'>Order</label></td></tr>
+<tr><td>N10</td><td class='item_name'>"Cat Ears" Soup Noodles <br /><span class='item_desc'>(a soft Chinese gnocchi served with pork and vegetables in a light broth)</span></td>
+<td>10.95</td>
+<td class='item_order'><input id='item_N10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N10'>Order</label></td></tr>
+<tr><td>N11</td><td class='item_name'>Yu-Nan Rice Noodle Pot <br /><span class='item_desc'>(seafood, quail egg, beef & chicken dropped into a pot of flavourful broth at your table)</span></td>
+<td>10.95</td>
+<td class='item_order'><input id='item_N11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N11'>Order</label></td></tr>
+<tr><td>N12</td><td class='item_name'>Xi'an White Lamb Stew<br /><span class='item_desc'>(a tradition lamb  dish steeped with diced  flat-bread, napa cabbage, woodear mushroom & cilantro)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_N12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N12'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat11" class=" collapsible "><legend>Stir-Fried Noodles</legend>
+<table>
+<tr><td>F1</td><td class='item_name'>Mu-Shu Stir-fried Noodles<br /><span class='item_desc'>(served with pork, cabbage, woodear mushroom & egg)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_F1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F1'>Order</label></td></tr>
+<tr><td>F2</td><td class='item_name'>Peaceful House Stir-Fried Noodles<br /><span class='item_desc'>(served with seafood, pork, vegetables & chilli garlic sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_F2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F2'>Order</label></td></tr>
+<tr><td>F3</td><td class='item_name'>Cumin Lamb Stir-fried Noodles<br /><span class='item_desc'>(served with fresh peppers, spicy and fragrant, also available with beef)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_F3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F3'>Order</label></td></tr>
+<tr><td>F4</td><td class='item_name'>Seafood Stir-fried Noodles<br /><span class='item_desc'>(served with fish, prawns, squid and greens)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_F4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F4'>Order</label></td></tr>
+<tr><td>F5</td><td class='item_name'>Sichaun Fried Noodles<br /><span class='item_desc'>(shredded pork, cabbage, garlic stems, peppers & Sichuan chilli sauce)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_F5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F5'>Order</label></td></tr>
+<tr><td>F6</td><td class='item_name'>Shanghai Stir-fried Noodles<br /><span class='item_desc'>(shredded pork, cabbage & light soy sauce)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_F6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F6'>Order</label></td></tr>
+<tr><td>F7</td><td class='item_name'>Beef Stir-fried Noodles <br /><span class='item_desc'>(with  fresh assorted vegetables & light soy sauce)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_F7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F7'>Order</label></td></tr>
+<tr><td>F8</td><td class='item_name'>Chicken Stir-fried Noodles<br /><span class='item_desc'>(with  fresh assorted vegetables & light soy sauce)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_F8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F8'>Order</label></td></tr>
+<tr><td>F9</td><td class='item_name'>Northern Curry Stir-fried Noodles<br /><span class='item_desc'>(chicken, bell peppers & onions stir-fried with yellow curry)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_F9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F9'>Order</label></td></tr>
+<tr><td>F10</td><td class='item_name'>Vegetable & Tofu Stir-fried Noodles <br /><span class='item_desc'>(stir-fried with fresh vegetables & crispy tofu)</span></td>
+<td>11.95</td>
+<td class='item_order'><input id='item_F10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F10'>Order</label></td></tr>
+<tr><td>F11</td><td class='item_name'>Cat Ear Stir-Fried Noodles<br /><span class='item_desc'>(a  Chinese gnocchi, soft and chewy, served with pork and vegetables)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_F11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F11'>Order</label></td></tr>
+<tr><td>F12</td><td class='item_name'>Mu-Shu Stir fried Buckwheat Noodles<br /><span class='item_desc'>(served with shredded pork, woodear mushroom, egg & cabbage)</span></td>
+<td>13.95</td>
+<td class='item_order'><input id='item_F12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F12'>Order</label></td></tr>
+<tr><td>F13</td><td class='item_name'>Cumin Lamb Stir fried Steamed Noodles<br /><span class='item_desc'>(spring lamb,  peppers & onions, fragrant and spicy,  available with beef)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_F13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F13'>Order</label></td></tr>
+<tr><td>F14</td><td class='item_name'>Chinese Rice Cakes<br /><span class='item_desc'>(soft and chewy, stir-fried with pork and leafy greens or napa cabbage)</span></td>
+<td>12.95</td>
+<td class='item_order'><input id='item_F14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_F14'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat10" class=" collapsible "><legend>Sauce Noodles</legend>
+<table>
+<tr><td>N13</td><td class='item_name'>Beijing "Zha-Jiang Mian” Noodles<br /><span class='item_desc'>(savoury dark pork sauce, shredded cucumber & bean sprouts)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N13'>Order</label></td></tr>
+<tr><td>N14</td><td class='item_name'>Dan-Dan Noodles<span id='opt_8' class='item_option'  onmouseover='showOptionDetails(this);' onmouseout='hideOptionDetails(this);'>(V)</span><br /><span class='item_desc'>(spicy, tangy peanut sauce, minced pork & spinach)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N14'>Order</label></td></tr>
+<tr><td>N15</td><td class='item_name'>Shan-Xi Sauce Noodles<br /><span class='item_desc'>(diced pork, potatoes, carrots & garlic stems in a savoury sauce)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N15'>Order</label></td></tr>
+<tr><td>N16</td><td class='item_name'>Xin-Jiang Chicken Noodles<br /><span class='item_desc'>(bone -in chicken braised with potatoes & hot peppers in a reduced spicy star-anise sauce)</span></td>
+<td>10.95</td>
+<td class='item_order'><input id='item_N16' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N16'>Order</label></td></tr>
+<tr><td>N17</td><td class='item_name'>Tangy Tomato & Egg Noodles<br /><span class='item_desc'>(chunky fresh tomato sauce, scrambled egg & green onions)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N17' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N17'>Order</label></td></tr>
+<tr><td>N18</td><td class='item_name'>Sizzled Hot-Chilli Noodles<br /><span class='item_desc'>(sizzling hot chilli-garlic oil drizzled on top of greens & zesty soy sauce)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N18' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N18'>Order</label></td></tr>
+<tr><td>N19</td><td class='item_name'>Cold Buckwheat Noodles<br /><span class='item_desc'>(hand-pressed grainy noodles served with a tangy and hot mustard sauce, carrots, bean sprouts & cucumber)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_N19' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N19'>Order</label></td></tr>
+<tr><td>N20</td><td class='item_name'>Xi'an Cold Steamed Noodles<br /><span class='item_desc'>(a soft chewy noodle created steaming process, served with a garlic-chilli sesame sauce, cucumber & bean sprouts)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_N20' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_N20'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat13" class=" collapsible "><legend>Dim Sum</legend>
+<table>
+<tr><td>D1</td><td class='item_name'>Xiao-Long Bao Steamed Buns<br /><span class='item_desc'>(filled with minced pork, ginger and a savoury a sauce - 8pcs)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D1'>Order</label></td></tr>
+<tr><td>D2</td><td class='item_name'>Steamed Soft Pork Buns<br /><span class='item_desc'>(soft yeasty bun with a salted pork filling - 6pcs)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D2'>Order</label></td></tr>
+<tr><td>D3</td><td class='item_name'>Pan-Fried Pork Buns<br /><span class='item_desc'>(filled with pork and scallions, soft bun, crispy bottom - 6pcs)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D3'>Order</label></td></tr>
+<tr><td>D4</td><td class='item_name'>Vegetable Buns<br /><span class='item_desc'>(pan-fried or steamed - filled with bokchoy, tofu, mushroom & vermicelli 4pcs)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D4'>Order</label></td></tr>
+<tr><td>D5</td><td class='item_name'>Peaceful Beef Rolls<br /><span class='item_desc'>(Five-spiced beef rolled in a crispy green onion flat-bread & sweet hoisin sauce)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D5'>Order</label></td></tr>
+<tr><td>D6</td><td class='item_name'>Peaceful Potato Rolls<br /><span class='item_desc'>(crispy flatbread rolled with shredded potato, scallions & sweet hoisin sauce)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D6'>Order</label></td></tr>
+<tr><td>D7</td><td class='item_name'>Cumin Beef & Flatbread<br /><span class='item_desc'>(a sesame flat-bread filled with  beef, cumin & fresh hot peppers)</span></td>
+<td>7.50</td>
+<td class='item_order'><input id='item_D7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D7'>Order</label></td></tr>
+<tr><td>D8</td><td class='item_name'>Stewed Marbled Pork & Flatbread<br /><span class='item_desc'>(stewed in dark sweet soy, served in a sesame flat-bread)</span></td>
+<td>7.50</td>
+<td class='item_order'><input id='item_D8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D8'>Order</label></td></tr>
+<tr><td>D9</td><td class='item_name'>Sesame Flat-Bread<br /><span class='item_desc'>(partially leavened, covered in sesame seeds, toasted to a soft crunch)</span></td>
+<td>7.50</td>
+<td class='item_order'><input id='item_D9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D9'>Order</label></td></tr>
+<tr><td>D10</td><td class='item_name'>Green Onion Flat-bread<br /><span class='item_desc'>(mixed with green onion and salt & pan-fried)</span></td>
+<td>7.50</td>
+<td class='item_order'><input id='item_D10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D10'>Order</label></td></tr>
+<tr><td>D11</td><td class='item_name'>Chive Pockets<br /><span class='item_desc'>(pan fried, filled with chives, egg, vermicelli & shrimp  - 2pcs)</span></td>
+<td>7.50</td>
+<td class='item_order'><input id='item_D11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D11'>Order</label></td></tr>
+<tr><td>D12</td><td class='item_name'>Northern Pork Dumplings<br /><span class='item_desc'>(filled with pork,chives, cabbage, green onions, boiled-10pcs)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D12'>Order</label></td></tr>
+<tr><td>D13</td><td class='item_name'>Lamb Dumplings<br /><span class='item_desc'>(filled with lamb, carrot, celery & cabbage- boiled -10pcs)</span></td>
+<td>7.50</td>
+<td class='item_order'><input id='item_D13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D13'>Order</label></td></tr>
+<tr><td>D14</td><td class='item_name'>Spicy & Tangy Dumplings<br /><span class='item_desc'>(pork dumplings served in spicy & sour soup base-10pcs)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_D14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D14'>Order</label></td></tr>
+<tr><td>D15</td><td class='item_name'>Mandarin Wonton Soup<br /><span class='item_desc'>(pork, watercress & bokchoy filled wontons served in a light broth)</span></td>
+<td>8.95</td>
+<td class='item_order'><input id='item_D15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D15'>Order</label></td></tr>
+<tr><td>D16</td><td class='item_name'>Sichuan Hot Chilli Wontons<br /><span class='item_desc'>(pork filling,tossed in chilli oil, garlic, vinegar & spinach - 8pcs)</span></td>
+<td>6.95</td>
+<td class='item_order'><input id='item_D16' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D16'>Order</label></td></tr>
+<tr><td>D17</td><td class='item_name'>Pan-Fried Chicken Dumplings<br /><span class='item_desc'>(filled with minced chicken & cabbage - 8pcs)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D17' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D17'>Order</label></td></tr>
+<tr><td>D18</td><td class='item_name'>Pan-Fried Pork Dumplings<br /><span class='item_desc'>(filled with pork and cabbage - 8pcs)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D18' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D18'>Order</label></td></tr>
+<tr><td>D19</td><td class='item_name'>Vegetable (Pan-Fried/Steamed) Dumplings<br /><span class='item_desc'>(filled with vermicelli, bokchoy, tofu, mushroom & carrot - 8pcs)</span></td>
+<td>7.95</td>
+<td class='item_order'><input id='item_D19' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D19'>Order</label></td></tr>
+<tr><td>D20</td><td class='item_name'>Threaded Bun Roll<br /><span class='item_desc'>(soft layered texture on the inside, available steamed or fried)</span></td>
+<td>3.95</td>
+<td class='item_order'><input id='item_D20' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_D20'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat14" class=" collapsible "><legend>Extras/Add-Ons</legend>
+<table>
+<tr><td>E1</td><td class='item_name'>Rice SML</td>
+<td>1.95</td>
+<td class='item_order'><input id='item_E1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_E1'>Order</label></td></tr>
+<tr><td>E2</td><td class='item_name'>Rice LRG</td>
+<td>6.00</td>
+<td class='item_order'><input id='item_E2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_E2'>Order</label></td></tr>
+<tr><td>E3</td><td class='item_name'>Add On 1.00</td>
+<td>1.00</td>
+<td class='item_order'><input id='item_E3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_E3'>Order</label></td></tr>
+<tr><td>E4</td><td class='item_name'>Add On 2.00</td>
+<td>2.00</td>
+<td class='item_order'><input id='item_E4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_E4'>Order</label></td></tr>
+<tr><td>E5</td><td class='item_name'>Add On 0.50</td>
+<td>0.50</td>
+<td class='item_order'><input id='item_E5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_E5'>Order</label></td></tr>
+<tr><td>E6</td><td class='item_name'>Add Side Noodle</td>
+<td>3.00</td>
+<td class='item_order'><input id='item_E6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_E6'>Order</label></td></tr>
+<tr><td>E7</td><td class='item_name'>Extra Sauce </td>
+<td>0.25</td>
+<td class='item_order'><input id='item_E7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_E7'>Order</label></td></tr>
+</table>
+</fieldset>
+<fieldset id="cat15" class=" collapsible "><legend>Beverages</legend>
+<table>
+<tr><td>BE1</td><td class='item_name'>Pop</td>
+<td>1.95</td>
+<td class='item_order'><input id='item_BE1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><label for='item_BE1'>Order</label></td></tr>
+</table>
+</fieldset>
+
+            <div id="optionDetails" class="option_box">
+            </div>
         </div>
     </div>
+    <script type="text/javascript">
+        setFlashByClass(".item_option");
+        checkedOrderItems();
+        function trackOrderItem(src) {
+            if (navigator.cookieEnabled == 0) {
+                alert("You need to enable cookies for this site to place oder properly!");
+            }else{
+                // Expire cookie in 2 days.
+                var today = new Date();
+                var exp   = new Date(today.getTime()+2*24*60*60*1000);
+                var cookieName="peacefulItems";
+                var value, oldValue, idx;
+                idx = src.id.indexOf("_");
+                if (idx>0)
+                    value = src.id.substr(idx+1);// str.substring(from,to), str.substr(from, length)
+                else
+                    value="0";
+                oldValue = getCookie(cookieName);
+                if (oldValue == null || oldValue=="" ){
+                    oldValue = ",";
+                }else{
+                    if ( oldValue.substr(oldValue.length-1,1)!=",")
+                        oldValue = oldValue +","
+                } 
+                
+                if (src.checked){
+                    idx = oldValue.indexOf(","+value+",");
+                    // no repeat value
+                    if (idx==-1){
+                        value = oldValue+value+",";
+                        setCookie(cookieName, value, exp); 
+                    }
+                }else{
+                    idx = oldValue.indexOf(","+value+",");
+                    var mySize = (","+value+",").length;
+                    if (idx>=0 ){
+                        if ((idx+mySize)<oldValue.length)
+                            value = oldValue.substr(0,idx+1)+oldValue.substr(idx+mySize);
+                        else
+                            value = oldValue.substr(0,idx+1);
+                        setCookie(cookieName, value, exp); 
+                    }
+                }
+                // alert("Old:"+oldValue+", new:"+value);
+            }
+        }
+
+        function checkedOrderItems() {
+            var i, value, field;
+            var orderItems = getCookie("peacefulItems");
+            if (orderItems != null && orderItems.length > 0) {
+                for (i = 0; i < document.forms[0].elements.length; i++) {
+                    field = document.forms[0].elements[i];
+                    if (field.id.indexOf("item_") != -1 && field.type == "checkbox") {
+                        value = field.id.substr(5);
+                        if (orderItems.indexOf("," + value + ",") >= 0)
+                            field.setAttribute("checked", true);
+                    }
+                }
+            }
+        }
+
+        setCollapsed();
+        setFixedPositionLeft();
+        function setCollapsed() {
+            // fix IE7 collapsed issue.
+            var fieldsets = document.getElementsByTagName("fieldset");
+            var today = new Date();
+            for (i = 0; i < fieldsets.length; i++) {
+                myTag = fieldsets[i];
+                if (myTag.id.indexOf("cat") >= 0) {
+                    if (myTag.id != "cat1" && myTag.className.indexOf("collapsed") == -1) {
+                        // myTag.setAttribute('className','collapsed');
+                        $(myTag).addClass(" collapsed");
+                    } else if (today.getHours() > 15 && myTag.id == "cat1" && myTag.className.indexOf("collapsed") == -1) {
+                        $(myTag).addClass(" collapsed");
+                    }
+                }
+            }
+        }
+
+        function setFixedPositionLeft() {
+            // fix IE7 fixed position issue.
+            if (isMSIE() && MSIE_Ver() < 8) {
+                var obj = document.getElementById("main_content");
+                var src = document.getElementById("left_side_bar");
+                if (obj) {
+                    var pos = findPosition(obj);
+                    src.style.left = pos[1] + 'px'; ;
+                }
+            }
+        }
+
+        //getBowserInfo();
+        function getBowserInfo() {
+            txt = "Browser CodeName: " + navigator.appCodeName + "\n";
+            txt += "Browser Name: " + navigator.appName + "\n";
+            txt += "Browser Version: " + navigator.appVersion + "\n";
+            txt += "Cookies Enabled: " + navigator.cookieEnabled + "\n";
+            txt += "Platform: " + navigator.platform + "\n";
+            txt += "User-agent header: " + navigator.userAgent + "\n";
+            alert(txt);
+        }
+
+
+    </script>
+
+        </form>
+    </div>
+
 </div>
+<!-- bodyWrapper end -->
+
+
+
+
+</body>
+
 
 
 
