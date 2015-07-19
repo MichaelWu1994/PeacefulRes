@@ -253,7 +253,7 @@ a.listdata:link,a.listdata:visited
 {
   font-size: 14px;
   font-weight: normal;
-  color: #d03c3a;
+  color: #B31323;
   text-decoration: none;
   display:block;
   text-align:left;
@@ -274,7 +274,7 @@ a.listdata:active
 }
 
 .listdata_Grey {
-    color:#777777;
+    color:##B31323;
 }
 .social_media
 {
