@@ -1,0 +1,1338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta charest = "utf-8">
+        <title>Menu </title>
+        <style>
+            html, body, #map-canvas {
+              height: 100%;
+              margin: 0px;
+              padding: 0px
+            }
+        </style>
+
+        <link rel="stylesheet" href='./styles/bootstrap.min.css'/>
+        <link rel="stylesheet" href="./styles/font-awesome.min.css">
+        <link rel="stylesheet" href="./styles/bootstrap.icon-large.min.css">
+        <link rel="stylesheet" href="./styles/original-1.css"/>
+
+
+</head>
+
+<body>
+
+        <!-- navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./main.html"><h3 style="margin-top:-1px"><font face="KaiTi" color='white'><strong>和 平 饭 店</strong></font></h3></a>
+            <a class="navbar-brand" href="./main.html"><h3 style="margin-top:-1px"><font face="Times New Roman" color='white'><strong>PEACEFUL RESTAURANT</strong></font></h3></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <!--<ul class="nav navbar-nav">
+
+            </ul>-->
+            <!--<form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="./main.html">Home</a></li>
+                <li class="active"><a href="#">Menu</a></li>
+                <li><a href="#">Order Online</a></li>
+            <!--HEAD-->
+                <li class><a href="#">About Us & Partner</a></li>
+            <!-- origin/master-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./CAMBIE.html">West Broadway & Cambie</a></li>
+                        <li><a href="./QUEBEC.html">East 5th Ave & Quebec St</a></li>
+                        <li><a href="./BALSAM.html">West 4th Ave & Balsam St</a></li>
+                    </ul>
+                </li>
+                <li><a href="./main_cn.html">中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <!-- navigation END-->
+
+
+
+
+
+<div id = "Signature Dish">
+<div id="carousel-demo" class="carousel slide" data-ride="carousel" style="height:400px width:800px">
+        <!--ol class="carousel-indicators">
+            <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-demo" data-slide-to="1"></li>
+        </ol-->
+        <div class="carousel-inner">
+            <div class="item active">
+            <img alt="First slide" src="./Pictures/MenuCover.png" />
+            <div class="carousel-caption">
+                <h1>MENU</h1>
+                <p></p>
+            </div>
+            </div>
+        
+        </div>
+        <!--a class="left carousel-control" href="#carousel-demo" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-demo" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a-->
+    </div>
+</div>
+
+
+
+
+    <div class="container">
+    <!-- LUNCH SPECIAL -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">LUNCH SPECIAL</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >BEEF & BROCOLI</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir-fried with minced garlic & light soy sauce </div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">GREEN ONION BEEF</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Tender beef rapidly stir-fried with green onions & ginger </div>
+            </div>  
+            </div>
+                        
+            <div class="row">    
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">BLACK BEAN SAUCE BEEF</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here </div-->
+            </div>
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">BEEF & SEASONAL VEGITABLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here </div-->
+            </div> 
+            </div> 
+
+            <div class="row"> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SPICY SHREDDED BEEF</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy shredded beef in a sweet & spicy sauce</div>
+            </div>
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">CHICKEN & SEASONAL VEGITABLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here </div-->
+            </div>  
+            </div>
+
+
+           <div class="row">
+           <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SWEEET SOUR CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>
+
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">KUNG PAO CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">w/ bell peppers, onions & peanuts </div>
+            </div>  
+            </div>
+
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">NORTHERN CURRY CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">w/ bell peppers, onions & yellow curry</div>
+            </div>
+
+
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">GENERAL TZAO'S CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy chicken in a tangy & spicy sauce</div>
+            </div> 
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">BEIJING PLUM SAUCE SHREDDED PORK</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>
+
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">CHILLI-GARLIC SAUCE SHREDDED PORK</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">w/ bamboo & woodear mushroom</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SICHUAN PORK BELLY & CABBAGE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>
+
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">CHILLI-GARLIC SAUCE EGGPLANT</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP16' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>  
+            </div>
+
+           <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SZECHUAN STRING BEANS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP17' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>
+
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SHITAKE MUSHROOM & BOK CHOY</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP18' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div> 
+            </div>
+
+           <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">FRIED TOFU & SEASONAL VEGETABLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP19' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>
+ 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SZECHUAN MAH-PO TOFU</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP20' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div> 
+            </div>
+
+           <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">PRAWNS & SOFT TOFU</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP21' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$8.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>
+ 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">STIR-FRIED PRAWNS WITH SEASONAL VEGETABLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_SP22' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$8.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div> 
+            </div>
+
+           <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px"><i>ADD NOODLES</i></h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3 " style="text-align:right; font-size:20px"><input id='item_SP23' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$1.00</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- COLD DISHES -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">COLD DISHES</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SICHUAN MEAT SALAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$8.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Beef tendon, five-spiced beef & beef tripe tossed in spicy peppercorn sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">CHICKEN & CLEAR NOODLE SALAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$8.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Clear noodles drizzled with a spicy sesame sauce & shredded chicken </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >GARLIC SAUCE PORK BELLY</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$8.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Thinly sliced pork belly drizzled with a spicy garlic sauce </div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">MUSTARD SEED VEG. SALAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Blanched carrots, celery & vermicelli tossed in a spicy mustard oil dressing </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SICHUAN CUCUMBERS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Fresh cucumbers tossed in a spicy Sichuan peppercorn dressing & garlic </div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">TOFU & CELERY SALAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pressed tofu, sweet red pepper & celery tossed in light soy dressing) </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CLEAR NOODLE SALAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Tossed with minced garlic, spinach & light soy dressing</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SPICY CILANTRO SALAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">fresh cilantro, sliced jalapenos and pressed tofu tossed in a tangy dressing</div>
+            </div>  
+            </div>
+
+             <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >WOODEAR MUSHROOM SALAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Tossed in a light tangy dressing with cilantro and green onion </div>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- SOUPS -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">SOUPS</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >PEPPERY FISH SOUP</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">A spicy and sour soup filled with tofu, bamboo, pickled greens & sliced fish</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SAVOURY LAMB SOUP</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$10.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Soft tofu, vermicelli, napa cabbage & woodear mushroom in a light broth </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >MANDARIN WONTON SOUP</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A17' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$8.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pork & leafy green filling, served in a light broth with spinach & cilantro</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SICHUAN HOT & SOUR SOUP</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A18' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pork, shrimp, bamboo, mushroom & egg in a spicy sour soup </div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SWEET CORN & CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A19' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pureed corn, diced chicken & threaded egg</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SEAFOOD TOFU SOUP</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A20' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$9.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Fish, prawn, squid, soft tofu and egg white in a clear broth </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SHREDDED VEG TOFU SOUP</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A21' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Shredded bamboo, mushroom & pressed tofu in a clear broth</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">TOMATO EGG SOUP</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_A22' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Fresh tomato & threaded egg simmered in a light broth </div>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- RICE DISHES -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">RICE DISHES</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >PEACEFUL HOUSE RICE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_R1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir fried with diced pork, shrimp, vegetables & cilantro - slightly spicy</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">MANDARIN LAMB RICE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_R2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir fried with diced lamb, carrots, celery, egg & cilantro </div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >YANG-ZHOU RICE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_R3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir fried with diced BBQ pork, shrimp, egg and vegetables</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">NORTHEN CURRY RICE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_R4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Diced pork, shrimp, egg & vegetables stir-fried with curry</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >EGG & TOMATO RICE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_R7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sautéed tomatoes and scrambled egg on rice</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">BEEF & TOMAMO RICE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_R8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sliced tender beef with sautéed tomatoes on rice </div>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- BEEF & LAMB -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">BEEF & LAMB</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SICHUAN BROTH BRAISED BEEF</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_B1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Served on greens surrounded by chilli oil & spicy mouth tingling broth</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">GREEN ONION BEEF</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_B2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Tender beef rapidly stir-fried with green onions & ginger </div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >XIN-JIANG CUMIN BEEF</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_B3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir fried with green peppers, cumin & chilli flakes</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SPYCY GINGERED BEEF</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_B4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy shredded beef tossed in a spicy gingery sauce</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >BEEF & BROCCOLI</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_B5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir-fried with minced garlic & light soy sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">BEEF & SEASONAL VEGITABLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_B6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir-fried with minced garlic & light soy sauce </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CILANTRO LAMB</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_L1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Spring lamb stirfried with cilantro, sweet bean sauce & chilli sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">XING-JIANG CUMIN LAMB</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_L2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Spring lamb dry stir-fried with green peppers, crushed cumin & chilli flakes </div>
+            </div>  
+            </div>
+
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >GREEN ONION LAMB</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_L3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Spring lamb rapidly stir-friedwith green onions & ginger</div>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PORK -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">PORK</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SPICY PORK & GARLIC STEMS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_P2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sliced pork stir-fried with fresh crispy garlic stems</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SICHUAN MARBLED PORK & CABBAGE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_P3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pork belly, five-spiced tofu, leeks, garlic & chilli peppers</div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >MANDARIN MU-SHU SHREDDED PORK</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_P4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir-fried with shredded woodear mushroom, egg & cabbage</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">BEIJING SWEET BEAN SAUCE PORK</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_P5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Served on a bed of shredded green onions</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CHILLI-GARLIC SAUCE SHREDDED PORK</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_P6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir-fried with shredded woodear fungus and bamboo</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SWEET SOY GLAZED SPARERIBS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_P7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Spareribs tossed in a reduced sweet soy & ginger sauce </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >HONEY GARLIC SPARERIBS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_P8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy spareribs tossed in a minced garlic & honey sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SPICY SALTED SPARERIBS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_P9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy spareribs dusted in spiced salt & diced chilli pepper </div>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+   <!-- CHICKEN -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">CHICKEN</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SICHUAN THOUSAND CHILLI CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy chicken stir fried with dried peppers, tongue-tingling peppercorns, garlic, ginger & green onion</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">GREEN PEPPERED CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy chicken stir fried with fresh jalape?os, peppercorn oil & garlic</div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SWEET SOY GLAZED CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy chicken tossed in a reduced sweet soy sauce with ginger & garlic</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">KUNG PAO CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sweet bell peppers, onions, peanuts & chili peppers</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CURRY CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Yellow curry, sweet bell peppers & onions</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">CHICKEN & BROCCOli</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Lightly stir-fried with minced garlic </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CHICKEN & SEASONAL VEGETABLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Lightly stir-fried with minced garlic</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">GENERAL TSAO'S CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy battered chicken tossed in a spicy tangy sauce </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SWEET & SOUR CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy battered chicken tossed in a tangy tomato-based sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">MANDARIN ORANGE GINGER CHICKEN</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_C11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy battered chicken tossed in sweet & spicy orange-ginger sauce </div>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+
+   <!-- SEAFOOD -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">SEAFOOD</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SICHUAN BROTH BRAISED FISH</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Served on a bed of greens surrounded by spicy mouth tingling broth</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SWEET RICE WINE FISH</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sliced basa stirfried with sweet soy, malt vinegar & bamboo</div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SPICY CHILLI-GARLIC FISH</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy basa fish tossed in a chili garlic sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SEAFOOD & SNOW PEAS STIR-FRY</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">A mixture of prawns, squid & basa fish lightly stirfried</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SPICY SALTED SQUID</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crisp squid tossed in spiced salt & diced chilli pepper</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SICHUAN PEPPERCORN SQUID</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sweet green peppers, onions, peanuts & dried chilli peppers</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SPICY CHILLI-GARLIC PRAWNS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$14.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir-fried with diced peppers & chilli-garlic sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">PRAWNS & VEGITABLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Lightly stir-fried with mixed vegetables & ginger </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >KUNG PAO PRAWNS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir-fried with sweet peppers, onions, peanuts & chilli peppers</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">PRAWNS & BRAISED TOFU</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_S10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Soft tofu & prawns served in a light and clear sauce </div>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+  <!--VEGETABLE & TOFU -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">VEGETABLE & TOFU</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SICHUAN MAH-PO TOFU</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Soft tofu cooked with minced pork & peppercorn sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SEASONAL VEGETABLES AND CRISPY TOFU</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Soft tofu cooked with minced pork & peppercorn sauce</div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SPICY SALTED TOFU</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy tofu tossed in spiced salt & diced chilli pepper</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">TANGY SHREDDED POTATO</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$10.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir fried with malt vinegar & garlic</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SHITAKE MUSHROOM & BOK CHOY</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Light vegetable dish with minced garlic</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">CHINESE FOREST VEGETABLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Bamboo shoots,shitake mushroom, leafy greens & crispy tofu</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SICHUAN WHITE CABBAGE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir fried with garlic, malt vinegar & peppercorn oil</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SEASONAL LEAFY</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Lightly sautéed with or without garlic, please inquire for daily variety</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SAVOURY BRAISED</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Bokchoy, enoki & straw mushroom gently braised in a light sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SICHUAN A-CHOY</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy leafy greens stir-fried with garlic, malt vinegar & Sichuan peppercorns </div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CHILLI-GARLIC EGGPLANT</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sautéed with shredded pork, bamboo, woodear mushroom & chilli paste</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">BEAN SAUCE EGGPLANT</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sautéed eggplant with green onion, garlic & slightly sweet bean paste</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CHINESE RATATOUILLE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Eggplant, green peppers & potatoes stir fried with a savoury garlic sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SICHUAN STRING BEANS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir-fried with a bit of pork, garlic, crushed chillies & soy sauce</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >GARLIC STRING BEANS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_V16' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Lightly stir-fried with minced garlic</div>
+            </div> 
+            </div>
+
+        </div>
+    </div>
+
+
+  <!--SOUP NOODLES -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">SOUP NOODLES</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SHAN-XI SPICY & TANGY SOUP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Diced pork, garlic stems, mushroom, carrots & potatoes</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">PORK-CHOP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy pork-chop & spinach in a savoury broth</div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SNOW GREEN SOUP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Cured Chinese greens & shredded pork in a light broth</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SICHUAN BEEF SOUP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$10.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stewed beef in a dark spicy broth, spinach & cilantro</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >LAN-ZHOU BEEF SOUP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sliced five-spiced beef, spinach & cilantro in a light broth</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">CHICKEN SOUP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Chicken, woodear mushroom & bokchoy in a light broth</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SEAFOOD SOUP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Prawns, fish cake, squid, shitake mushroom & greens in a light broth</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">STEWED LAMB SOUP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Tender lamb, napa cabbage & woodear mushroom in a light broth</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >VEGETABLE & TOFU SOUP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Assorted vegetables & crispy tofu in a light chicken broth</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">"CAT EARS" SOUP NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">A soft Chinese gnocchi served with pork and vegetables in a light broth</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >YU-NAN RICE NOODLE POT</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sautéed with shredded pork, bamboo, woodear mushroom & chilli paste</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">XI'AN WHITE LAMB STEW</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">A tradition lamb dish steeped with diced flat-bread, napa cabbage, woodear mushroom & cilantro</div>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+
+  <!--STIR-FRIED NOODLES -->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">STIR-FRIED NOODLES</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >MU-SHU STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Served with pork, cabbage, woodear mushroom & egg</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">PEACEFUL HOUSE STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Served with seafood, pork, vegetables & chilli garlic sauce</div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CUMIN LAMB STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Served with fresh peppers, spicy and fragrant, also available with beef</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SEAFOOD STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Served with fish, prawns, squid and greens</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SICHUAN FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Shredded pork, cabbage, garlic stems, peppers & Sichuan chilli sauce)</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SHANGHAI STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Shredded pork, cabbage & light soy sauce</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >BEEF STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">With fresh assorted vegetables & light soy sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">CHICKEN STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">With fresh assorted vegetables & light soy sauce</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >NORTHERN CURRY STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Chicken, bell peppers & onions stir-fried with yellow curry</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">VEGETABLE & TOFU STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$11.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stir-fried with fresh vegetables & crispy tofu</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >"CAT EAR" STIR-FRIED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">A Chinese gnocchi, soft and chewy, served with pork and vegetables</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">MU-SHU STIR-FRIED BUCKWHEAT NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$13.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Served with shredded pork, woodear mushroom, egg & cabbage</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CUMIN LAMB STIR-FRIED STEAMED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Spring lamb, peppers & onions, fragrant and spicy, available with beef</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">CHINESE RICE CAKES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_F14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$12.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Soft and chewy, stir-fried with pork and leafy greens or napa cabbage</div>
+            </div>  
+            </div>
+
+        </div>
+    </div>
+
+  <!--SAUCE NOODLES-->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">SAUCE NOODLES</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >BEIJING "ZHANG-JIANG MIAN" NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Savoury dark pork sauce, shredded cucumber & bean sprouts</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">DAN-DAN NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Spicy, tangy peanut sauce, minced pork & spinach</div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SHAN-XI SAUCE NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Spicy, tangy peanut sauce, minced pork & spinach</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">XIN-JIANG CHICKEN NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N16' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$10.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Bone -in chicken braised with potatoes & hot peppers in a reduced spicy star-anise sauce</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >TANGY TOMATO & EGG NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N17' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Chunky fresh tomato sauce, scrambled egg & green onions</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SIZZED HOT-CHILLI NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N18' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Sizzling hot chilli-garlic oil drizzled on top of greens & zesty soy sauce</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >COLD BUCKWHEAT NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N19' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$8.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Hand-pressed grainy noodles served with a tangy and hot mustard sauce, carrots, bean sprouts & cucumber</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">XI'AN COLD STEAMED NOODLES</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_N20' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">A soft chewy noodle created steaming process, served with a garlic-chilli sesame sauce, cucumber & bean sprouts</div>
+            </div>  
+            </div>
+        </div>
+    </div>
+
+  <!--DIM SUM-->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">DIM SUM</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >XIAO-LONG BAO STEAMED BUNS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Filled with minced pork, ginger and a savoury a sauce - 8pcs</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">STEAMED SOFT PORK BUNS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Soft yeasty bun with a salted pork filling - 6pcs</div>
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >PAN-FRIED PORK BUNS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Filled with pork and scallions, soft bun, crispy bottom - 6pcs</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">VEGETABLE BUNS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pan-fried or steamed - filled with bokchoy, tofu, mushroom & vermicelli 4pcs</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >PEACEFUL BEEF ROOLS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Five-spiced beef rolled in a crispy green onion flat-bread & sweet hoisin sauce</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">PEACEFUL POTATO ROOLS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Crispy flatbread rolled with shredded potato, scallions & sweet hoisin sauce</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CUMIN BEEF & FLATBREAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">A sesame flat-bread filled with beef, cumin & fresh hot peppers</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">STEWED MARBLED PORK & FLATBREAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D8' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Stewed in dark sweet soy, served in a sesame flat-bread</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >SESAME FLAT-BREAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D9' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Partially leavened, covered in sesame seeds, toasted to a soft crunch</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">GREEN ONION FLAT-BREAD</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D10' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Mixed with green onion and salt & pan-fried</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >CHIVE POCKETS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D11' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pan fried, filled with chives, egg, vermicelli & shrimp - 2pcs</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">NORTHERN PORK DUMPLINGS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D12' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Filled with pork,chives, cabbage, green onions, boiled-10pcs</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >LAMB DUMPLINGS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D13' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.50</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Filled with lamb, carrot, celery & cabbage- boiled -10pcs</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SPICY & TANGY DUMPLINGS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D14' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$8.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pork dumplings served in spicy & sour soup base-10pcs</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >MANDARIN WONTON SOUP</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D15' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$8.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pork, watercress & bokchoy filled wontons served in a light broth</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">SICHUAN HOT CHILLI WONTONS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D16' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$6.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Pork filling,tossed in chilli oil, garlic, vinegar & spinach - 8pcs</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >PAN-FRIED CHICKEN DUMPLINGS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D17' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Filled with minced chicken & cabbage - 8pcs</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">PAN-FRIED PORK DUMPLINGS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D18' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Filled with pork and cabbage - 8pcs</div>
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >VEGETABLE (PAN-FRIED/STEAMED) DUMPLINGS</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D19' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$7.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Filled with vermicelli, bokchoy, tofu, mushroom & carrot - 8pcs</div>
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">THREADED BUN ROLL</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_D20' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$3.95</strong></h3>
+                <div class="col-xs-12" style="text-align:left;padding-left:15px">Soft layered texture on the inside, available steamed or fried</div>
+            </div>  
+            </div>
+
+        </div>
+    </div>
+
+  <!--EXTRAS/ADD-ONS-->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">EXTRAS/ADD-ONS</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >Rice SMALL</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_E1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$1.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">Rice LARGE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_E2' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$6.00</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>  
+            </div> 
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >ADD ON 1.00</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_E3' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$1.00</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">ADD ON 2.00</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_E4' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$2.00</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >ADD ON 0.50</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_E5' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$0.50</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div> 
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" style="font-size:24px">ADD SIDE NOODLE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_E6' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$3.00</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>  
+            </div>
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >EXTRA SAUCE</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_E7' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$0.25</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div> 
+            </div>
+        </div>
+    </div>
+
+  <!--BEVERAGES-->
+    <div class="row">
+    <h2  font-weight="light" style="text-align:left;padding-top:15px">BEVERAGES</h2>
+        <div class="container" style="margin-top:10px; margin-bottom:5px; border-top:1px solid #C3272D"></div>
+        
+        <div class="row">
+
+            <div class="row">
+            <div class="col-md-6" style="text-align:left">
+                <h3 class="col-xs-7 col-sm-8 col-md-9" >POP</h3>
+                <h3 class="col-xs-5 col-sm-4 col-md-3" style="text-align:right; font-size:20px"><input id='item_BE1' type='checkbox' value='1' onclick='trackOrderItem(this)' /><strong>&nbsp;$1.95</strong></h3>
+                <!--div class="col-xs-12" style="text-align:left;padding-left:15px">Intro goes here</div-->
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script  src='./scripts/jquery-2.1.4.min.js'></script>
+        <script  src='./scripts/bootstrap.min.js'></script>
+
+
+    <style>
+        .info{
+            padding-left: 17px;
+        }
+        .subinfo{
+            padding-left: 35px;
+        }
+        .navbar-nav > li > a {
+            padding-top:15px !important; padding-bottom:15px !important;
+        }
+        .navbar {
+            min-height:50px !important
+        }
+        .navbar-brand{
+            padding-top: 15px !important; padding-bottom: 15px !important;
+        }
+        .body{
+            padding-top: 80px !important;
+        }
+        .carousel{
+            margin-top:50px;
+        }
+        .btn-default{
+            border-radius:0px !important;
+        }
+
+
+
+    </style>
+
+</body>
+
+
+
+
+
+</html>
