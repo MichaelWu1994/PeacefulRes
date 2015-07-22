@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-  <title>Bootstrap Example</title>
+  <title>Menu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./styles/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+    <link rel="stylesheet" href='./styles/bootstrap.min.css' />
+    <link rel="stylesheet" href="./styles/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap.icon-large.min.css">
+    <link rel="stylesheet" href="./styles/original-1.css" />
+
+    <script>
+        function isHidden(oDiv) {
+            var vDiv = document.getElementById(oDiv);
+            vDiv.style.display = (vDiv.style.display == 'none') ? 'block' : 'none';
+        }
+    </script>
+
+    <script src='./scripts/jquery-2.1.4.min.js'></script>
+    <script src='./scripts/bootstrap.min.js'></script>
+  
+
   <style>
+  
   body {
       position: relative;
   }
@@ -29,11 +46,52 @@
     color:#fff;background-color:#C3272D
   }
 
-
-
+html, body, #map-canvas {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
   }
+
+        .info {
+            padding-left: 17px;
+        }
+
+        .subinfo {
+            padding-left: 35px;
+        }
+
+        .navbar-nav > li > a {
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+        }
+
+        .navbar {
+            min-height: 50px !important;
+        }
+
+        .navbar-brand {
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+        }
+
+        .body {
+            padding-top: 80px !important;
+        }
+
+        .carousel {
+            margin-top: 50px;
+        }
+
+        .btn-default {
+            border-radius: 0px !important;
+        }
+
   </style>
+
 </head>
+
+
+
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
 <div class="container">
@@ -1364,9 +1422,6 @@
             </div>
         </div>
       </div> 
-
-
-
 
     </div>
   </div>
