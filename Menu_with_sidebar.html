@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Menu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./styles/bootstrap.min.css" />
@@ -15,23 +15,31 @@
       top: 20px;
       position: fixed;
       color: #C3272D;
-
   }
   .nav-pills>li.active>a{
-    color:#fff;background-color:#C3272D
+    background-color:#C3272D;
+    border-radius: 0px
   }
 
   .nav-pills>li>a{
     color:#C3272D
   }
 
-    .nav-pills>li.active>a:hover{
-    color:#fff;background-color:#C3272D
+ .nav-pills>li.active>a:hover{
+    color:#fff;
+    background-color:#C3272D;
+    border-radius: 0px
   }
 
-
-
+   .nav-pills>li>a:hover{
+    border-radius: 0px
   }
+
+.panel-default{
+    border-radius: 0px;
+
+}
+
   </style>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
